@@ -69,7 +69,7 @@ class Person(object):
 
     def celebrate_birthday(self):
         self.age = self.age + 1
-        print('Happy Birthday')
+        print('Happy birthday!')
         """
         Increments this Person's age.
         ALso prints 'Happy birthday!'.
