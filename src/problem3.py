@@ -94,7 +94,7 @@ class Person(object):
         """
         Returns a new Person whose age is twice this Person's age.
         """
-        # TODO: Implement and test this method.
+        # Done
 
 
 # -----------------------------------------------------------------------------

@@ -2,8 +2,8 @@
 Exam 2, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Joe Krisciunas.  April 2018.
+"""  # Done
 
 import time
 import testing_helper
@@ -18,12 +18,12 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
 
-    # run_test_problem4a()
+    run_test_problem4a()
     # run_test_problem4b()
 
 
 ###############################################################################
-# TODO: 2.  READ the doc-string for the   is_prime   function below.
+# Done
 #           It is the same  is_prime  function that you have used previously,
 #           except that it returns  False  for all integers less than 2.
 #
@@ -124,6 +124,11 @@ def run_test_problem4a():
 
 
 def problem4a(strings):
+    for k in range(len(strings)):
+        test = strings[k]
+        if is_prime(len(test)) == True:
+            return test
+    return '-1'
     """
     What comes in:  A sequence of strings.
     What goes out:
