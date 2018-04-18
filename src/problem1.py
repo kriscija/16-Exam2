@@ -70,10 +70,11 @@ def problem1(rectangles):
     :param rectangles: [Rect]
     :return: int
     """
-
+    sum = 0
     for k in range(len(rectangles)):
+
         test = rectangles[k]
-        sum = test.Rect.w & test.Rect.h
+        sum = test.w * test.h
         sum = sum + sum
     return sum
 
