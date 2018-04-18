@@ -74,12 +74,11 @@ def problem1(rectangles):
     for k in range(len(rectangles)):
 
         test = rectangles[k]
-        sum = test.w * test.h
-        sum = sum + sum
+        sum = sum + (test.w * test.h)
     return sum
 
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # Done
     # -------------------------------------------------------------------------
 
 
