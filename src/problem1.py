@@ -38,9 +38,9 @@ def run_test_problem1():
     l1 = [Rect(5, 10),
                 Rect(4, 3),
                 Rect(100, 7)]
-    l2 = [Rect(25, 4),
-                Rect(4, 4),
-                Rect(100, 10)]
+    l2 = [Rect(25, 4), Rect(4, 4), Rect(100, 10)]
+
+    l3 = [Rect(2, 1), Rect(3, 5), Rect(4, 27)]
     #test 1
     actual1 = problem1(l1)
     print('expected: 762')
@@ -50,6 +50,11 @@ def run_test_problem1():
     actual2 = problem1(l2)
     print('expected: 1116')
     print('actual:', actual2)
+
+    # test 3
+    actual3 = problem1(l3)
+    print('expected: 125')
+    print('actual:', actual3)
 
 
 def problem1(rectangles):
