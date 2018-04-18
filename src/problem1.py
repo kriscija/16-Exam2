@@ -43,12 +43,12 @@ def run_test_problem1():
                 Rect(100, 10)]
     #test 1
     actual1 = problem1(l1)
-    print('expected = 762')
+    print('expected: 762')
     print('actual:', actual1)
 
     # test 2
     actual2 = problem1(l2)
-    print('expected = 1116')
+    print('expected: 1116')
     print('actual:', actual2)
 
 

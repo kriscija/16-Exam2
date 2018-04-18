@@ -19,7 +19,7 @@ def main():
     print(' to run the testing code as you complete the TODOs.')
 
     run_test_problem4a()
-    # run_test_problem4b()
+    run_test_problem4b()
 
 
 ###############################################################################
@@ -128,7 +128,7 @@ def problem4a(strings):
         test = strings[k]
         if is_prime(len(test)) == True:
             return test
-    return '-1'
+    return -1
     """
     What comes in:  A sequence of strings.
     What goes out:
@@ -158,7 +158,7 @@ def problem4a(strings):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
@@ -226,6 +226,15 @@ def run_test_problem4b():
 #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
 # -----------------------------------------------------------------------------
 def problem4b(list_of_tuples_of_strings):
+    for k in range(len(list_of_tuples_of_strings)):
+        test1 = list_of_tuples_of_strings[k]
+        for k in range(len(test1)):
+            test2 = test1[(k)]
+            if is_prime(len(test2)):
+                return True
+    return False
+
+
     """
     What comes in:  A list of tuples of strings.
     What goes out:
