@@ -2,8 +2,8 @@
 Exam 2, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Joe Krisciunas.  April 2018.
+"""  # Done
 
 
 def main():
@@ -12,7 +12,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the code of the  Rect  class below.
+# Done
 #
 #   Once you are confident that you understand the  Rect  class and its code,
 #   change the TO-DO for this problem to DONE.
@@ -29,15 +29,33 @@ class Rect(object):
 def run_test_problem1():
     """ Tests the   problem1   function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement at least 2 tests of the  problem1  function.
+    # Done
     # -------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
     print('Testing the   problem1   function:')
     print('--------------------------------------------------')
+    l1 = [Rect(5, 10),
+                Rect(4, 3),
+                Rect(100, 7)]
+    l2 = [Rect(25, 4),
+                Rect(4, 4),
+                Rect(100, 10)]
+    #test 1
+    actual1 = problem1(l1)
+    print('expected = 762')
+    print('actual:', actual1)
+
+    # test 2
+    actual2 = problem1(l2)
+    print('expected = 1116')
+    print('actual:', actual2)
 
 
 def problem1(rectangles):
+
+
+
     """
     What comes in:  A sequence of  Rect  objects.
     What goes out:  Returns the sum of the areas of the given  Rect  objects.
@@ -52,6 +70,13 @@ def problem1(rectangles):
     :param rectangles: [Rect]
     :return: int
     """
+
+    for k in range(len(rectangles)):
+        test = rectangles[k]
+        sum = test.Rect.w & test.Rect.h
+        sum = sum + sum
+    return sum
+
     # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     # -------------------------------------------------------------------------
